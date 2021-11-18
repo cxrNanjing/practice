@@ -3,7 +3,6 @@ import Vue from 'vue'
 import App from '@/App'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import router from '@/router'
 Vue.use(ElementUI)
 // import {Button,Message} from 'element-ui'
 // Vue.prototype.$message = Message
@@ -11,10 +10,9 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
-Vue.prototype.$bus = new Vue()
+Vue.prototype.$bus = new Vue() 
 
 new Vue({
   // el: '#app',
-  render: h => h(App),
-  router
+  render: h => h(App)
 }).$mount('#app')
